@@ -1,0 +1,265 @@
+
+    /* box-sizing可以使padding不用一直調,興號則是選擇所有元素 
+    scroll-behavior是為了使滑動順暢*/
+    
+    *{
+        box-sizing: border-box;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    form{
+        display: inline;
+    }
+    
+    
+
+    
+    body{
+        /* 瀏覽器的原點在左上角
+        margin是為了清出他預設的邊匡外值，否則會圖片不貼邊匡，vw和vh是滿頻的意思
+        background-size是將整個圖片填滿，但會以左上角為定點，因此不繪置中，要利用background-position來使他在中間
+        在left的地方要利用calc(50% - xxpx)是為了不使按鍵隨畫面移動他會隨畫面比例做調整
+        可利用transform:translate（-自己的一半，-自己的ㄧ半）可寫50%,若要放大則直接在後面空行血scale:x
+        主area要設position:relative,而它內部的子格要設postion:absolute才能做定點
+        san-serif即有襯線
+        padding可以使自置中
+        opacity會整個全部包括子都模糊
+        顏色輸入方式：1.輸入色號2.輸入顏色名稱3.填rgba(0,0,0,0)最後一個0能讓他半透明
+        <h2>為段落標簽
+        <p>則是文字的意思
+            ./代表當前一頁
+            ../帶俵載回前一頁
+            ../../代表回到前一頁在前一頁
+            emmt chit sheat可查
+            inline功能部會佔滿整層
+            padding top可使按鍵紐會擋到圖片
+            z-index: 提高高度;
+            transtion duration為顏色漸變*/
+        margin:0;
+        width: vw;
+        height: vh;
+        padding-top: 70px;
+    }
+    .navbar{
+        width: 100%;
+        height: 70px;
+        background-color: rgba(0,0,0,0);
+        position:fixed;
+        top:0;
+        left:0;
+        z-index: 9999;
+        margin:10px;
+
+
+    }
+   
+    a:hover{
+        color: cadetblue;
+        transition-duration:  3s;
+        
+    }
+    
+    .btn{
+        font-family: fantasy;
+        color:rgb(44, 44, 143);
+        background-color:rgba(0,0,0,0);
+        padding:10px 20px;
+        float: left;
+    }
+    
+    
+    
+     .btn_area{
+        float:right;
+    }
+     .list{
+        color: black;
+        top: 500px;
+    }
+     #area1{
+        position: relative;
+        width:100%;
+        height:100vh; 
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        
+        background-image:url('https://www.w3schools.com/howto/img_parallax.jpg')
+        
+    }
+    #mask{
+        position: relative;
+        width:100%;
+        height:100vh; 
+        background-attachment: fixed;
+        background-color: seashell;
+        opacity: 30%;
+    }
+    #title-1{
+        font-family: fantasy;
+        text-align: center;
+        line-height: 100px;
+        padding: 5px;
+        color:white ;
+        font-size: 40px;
+        position: absolute;
+        width: 400px;
+        height:70px;
+        background-color:black;
+        opacity: 60%;
+        top: 50%;
+        left:50%;
+        transform: translate(-50% , -50%); scale: 1;
+        
+        
+    }
+    #area2{
+        width: 100;
+        height: auto;
+        background-color:white;
+        position: relative;
+        padding: 50px 80px;
+
+        
+        
+
+    }
+    #topic{
+        font-family: fantasy;
+        text-align: justify;
+        color:black;
+        line-height: 85px;
+        font-size: 40px;
+        text-align: center;
+        background-color:white;
+        left:calc(50% - 165px) ;
+        top:calc(50% - 200px)
+
+    }
+    #context{
+        padding: 60px 10px;
+        text-align: center;
+        text-align: justify;
+        color:black;
+        line-height: 15px;
+        font-size: 15px;
+        
+        
+        background-color:white;
+       
+    }
+    #area3{
+        width: 100%;
+        height: 500px;
+        background-color:none;
+        position: relative;
+        background-image:url('https://www.w3schools.com/howto/img_parallax2.jpg') ;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    #mask1{
+        width: 100%;
+        height: 500px;
+         background-color: black;
+
+    }
+    /* 先做遮罩，再利用hover將遮罩變透明 */
+    #mask1:hover{
+        opacity: 0.3;
+        transition-duration: 3s;
+    }
+    #topic-2{
+        font-family: fantasy;
+        color:white;
+        line-height: 85px;
+        font-size: 40px;
+        text-align: center;
+        letter-spacing: 10px;
+        width: 300px;
+        height:95px;
+        
+        position: absolute;
+        left:calc(50% - 165px) ;
+        top:calc(50% - 50px)
+
+
+    }
+    #area5{
+        font-family:fantasy;
+        color: blanchedalmond;
+        text-align: center;
+        line-height: 85px;
+        width: 100%;
+        height: 100px;
+        background-color:black;
+        position: relative;
+        
+    }
+    #area6{
+        width: 100%;
+        height: 500px;
+        background-color:none;
+        position: relative;
+        background-image:url('https://www.w3schools.com/howto/img_parallax3.jpg') ;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        
+    }
+    #topic-3{
+       font-family: fantasy;
+        color:white;
+        line-height: 85px;
+        font-size: 40px;
+        text-align: center;
+        letter-spacing: 10px;
+        width: 300px;
+        height:95px;
+        
+        position: absolute;
+        left:calc(50% - 165px) ;
+        top:calc(50% - 50px)
+
+
+    }
+    #area7{
+        font-family: fantasy;
+        color: blanchedalmond;
+        text-align: center;
+        line-height: 85px;
+        width: 100%;
+        height: 100px;
+        background-color:black;
+        position: relative;
+           
+    }
+    #area8{
+        position: relative;
+        width:100%;
+        height:100vh; 
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        opacity: 70%;
+        background-image:url('https://www.w3schools.com/howto/img_parallax.jpg')
+        
+
+    }
+    #topic-4{
+       font-family: fantasy;
+        text-align: center;
+        line-height: 80px;
+        color:white ;
+        font-size: 40px;
+        position: absolute;
+        width: 400px;
+        height:70px;
+        padding: 5px;
+        background-color: rgb(26, 24, 24);
+        opacity: 90%;
+        left: calc(50% - 200px);
+        top:calc(50% - 35px)
+
+    }
