@@ -1,0 +1,469 @@
+*{
+    transition: .3;
+}
+body{
+    margin: 0;
+    
+   
+}
+.background{
+    width: 100%;  
+    height: 100vh;
+    background-color: lightcoral;
+}
+.sidebar{
+    width: 366px;
+    height: 100vh;
+    background-color: rgb(133, 96, 96);
+    float: left;
+   
+    
+    
+}
+.sidebar-box{
+    width: 150px;
+    height: 150px;
+    background-color: khaki;
+    background-image: url('https://previews.123rf.com/images/vectortwins/vectortwins1510/vectortwins151000044/46666626-luxury-vintage-logo.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-left: 30% ;
+    margin-top: 20%;
+}
+.nav_btn{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.btn{
+    text-decoration: none;
+    display: block;
+    font-size: 24px;
+    line-height: 48px;
+   
+}
+
+
+.main{
+    width: calc(100% - 366px);
+    height: 100vh;
+    background-color: lightblue;
+    background-image: url('https://us.123rf.com/450wm/siraphol/siraphol1502/siraphol150205026/36705139-headlight-lamp-vintage-classic-car-vintage-effect-style-pictures.jpg?ver=6');
+    background-size: cover;
+    background-position: center;
+    float: right;
+    position: relative;
+    
+}
+.right_area{
+    width: 960px;
+    height: 570px;
+    
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50% , -50%);
+
+}
+.mask{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.mask:hover{
+    opacity: 0;
+    transition: 3s;
+}
+
+.box1{
+    width: 33%;
+    height: 100%;
+    float: left;
+    
+    
+    background-image: url('https://lh4.googleusercontent.com/UVDgDhmxyTvs_lE2fx1_bmNHReQYagwH6Gv9BkjZowb9Cp4L-p2ZeTJ_X3P2LjcYgPqo5-h-B-fRk1wE-ztIvd7EHtg_2mCHJyYK95_6q944Th_f0EoHPcGIaNfCZxCnBc9Tk54');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+    
+    
+   
+}
+/* 方格的屬性，是會填滿整個右邊的區域，而使得他排斥下面的方塊
+ 利用float:right和float:left來使方塊並排*/
+.box2{
+    width: calc(34% - 10px);
+    height: 100%;
+    margin-left: 5px;
+    float: left;
+    background-color: black;
+    background-image:url('https://2.share.photo.xuite.net/og01a/123b582/6458757/1131137021_x.jpg');
+    background-size:cover;
+    background-position:center;
+    opacity: 0.9;
+    
+}
+.box3{
+    width: 33%;
+    height: 100%;
+    float: left;
+    margin-left: 5px;
+    background-color:white;
+    background-image:url('https://s.yimg.com/ny/api/res/1.2/rRr8B_6vc.JJEm6JsHr9Ow--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9NDgwO2g9MjY0/http://33.media.tumblr.com/6029fde0744a7ddf5d4e3e236a28f4b8/tumblr_o3ahfsQIBp1sotwrfo1_500.gif');
+    background-size:cover;
+    background-position:center;
+    opacity: 0.9;
+    
+}
+@media (max-width:1330px){
+    body{
+        margin: 0;
+        
+       
+    }
+    .background{
+        width: 100%;  
+        height: 100vh;
+        background-color: lightcoral;
+    }
+    .sidebar{
+        width: 366px;
+        height: 100vh;
+        background-color: rgb(133, 96, 96);
+        float: left;
+        
+        
+    }
+    .sidebar-box{
+        width: 150px;
+        height: 150px;
+        background-color: khaki;
+        background-image: url('https://previews.123rf.com/images/vectortwins/vectortwins1510/vectortwins151000044/46666626-luxury-vintage-logo.jpg');
+        background-size: cover;
+        background-position: center;
+        margin-left: 30% ;
+        margin-top: 20%;
+    }
+    .nav_btn{
+        text-align: center;
+        margin-top: 15px;
+    }
+    .btn{
+        display: block;
+        font-size: 24px;
+        line-height: 48px;
+    }
+    
+    .main{
+        width: calc(100% - 366px);
+        height: 100vh;
+        background-color: lightblue;
+        background-image: url('https://us.123rf.com/450wm/siraphol/siraphol1502/siraphol150205026/36705139-headlight-lamp-vintage-classic-car-vintage-effect-style-pictures.jpg?ver=6');
+        background-size: cover;
+        background-position: center;
+        float: right;
+        position: relative;
+        
+    }
+    .mask{
+        width: 100%;
+        height: 100%;
+        background-color: black;
+    }
+    .mask:hover{
+        opacity: 0;
+        transition: 3s;
+    }
+    .right_area{
+        width: 960px;
+        height: 570px;
+      
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50% , -50%);
+    
+    }
+    /*transform: translate(-50% , -50%);的意思是為了讓他排到畫面正中間*/
+    
+    
+    .box1{
+        width: 100%;
+        height: calc(50% - 5px);
+        margin-bottom: 5px;
+        background-color: maroon;
+        background-image: url('https://lh4.googleusercontent.com/UVDgDhmxyTvs_lE2fx1_bmNHReQYagwH6Gv9BkjZowb9Cp4L-p2ZeTJ_X3P2LjcYgPqo5-h-B-fRk1wE-ztIvd7EHtg_2mCHJyYK95_6q944Th_f0EoHPcGIaNfCZxCnBc9Tk54');
+        background-size: cover;
+        background-position: center;
+        opacity: 0.9;
+        
+        
+       
+    }
+    /* 方格的屬性，是會填滿整個右邊的區域，而使得他排斥下面的方塊
+     利用float:right和float:left來使方塊並排*/
+    .box2{
+        width: 48%;
+        height: 50%;
+        margin-right: 1px;
+        float: left;
+        background-color: black;
+        background-image:url('https://2.share.photo.xuite.net/og01a/123b582/6458757/1131137021_x.jpg');
+        background-size:cover;
+        background-position:center;
+        opacity: 0.9;
+       
+    }
+    .box3{
+        width: 50%;
+        height: 50%;
+        float: left;
+        
+        background-color:white;
+        background-image:url('https://s.yimg.com/ny/api/res/1.2/rRr8B_6vc.JJEm6JsHr9Ow--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9NDgwO2g9MjY0/http://33.media.tumblr.com/6029fde0744a7ddf5d4e3e236a28f4b8/tumblr_o3ahfsQIBp1sotwrfo1_500.gif');
+        background-size:cover;
+        background-position:right;
+        opacity: 0.9;
+        
+    }
+    
+    
+}
+@media (max-width:1200px){
+    body{
+        margin: 0;
+        
+       
+    }
+    .background{
+        width: 100%;  
+        height: 100vh;
+        background-color: lightcoral;
+    }
+    .sidebar{
+        width: 100%;
+        height: 100px;
+        background-color: rgb(133, 96, 96);
+        position: relative;
+        padding: 10px;
+        
+        
+    }
+    .sidebar-box{
+        margin: 0;
+        width: 80px;
+        height: 80px;
+        background-color: khaki;
+        background-image: url('https://previews.123rf.com/images/vectortwins/vectortwins1510/vectortwins151000044/46666626-luxury-vintage-logo.jpg');
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top: 10px;
+        left: 20%;
+       
+    }
+    .nav_btn{
+        display: inline-block;
+        
+        position: absolute;
+        top: 25%;
+        right: 25%;
+        
+    }
+    /* .btn{
+        
+        font-size: 24px;
+    
+    } */
+    .main{
+        width:100%;
+        height: calc(100% - 100px);
+        background-color: lightblue;
+        background-image: url('https://us.123rf.com/450wm/siraphol/siraphol1502/siraphol150205026/36705139-headlight-lamp-vintage-classic-car-vintage-effect-style-pictures.jpg?ver=6');
+        background-size: cover;
+        background-position: center;
+        float: right;
+        position: relative;
+        
+    }
+    .mask{
+        width: 100%;
+        height: 100%;
+        background-color: black;
+    }
+    .mask:hover{
+        opacity: 0;
+        transition: 3s;
+    }
+    .right_area{
+        width: 90%;
+        height: 80%;
+        
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50% , -50%);
+    
+    }
+    .box1{
+        width: 100%;
+        height: calc(50% - 2.5px);
+        margin-bottom: 5px;
+        background-color: maroon;
+        background-image: url('https://lh4.googleusercontent.com/UVDgDhmxyTvs_lE2fx1_bmNHReQYagwH6Gv9BkjZowb9Cp4L-p2ZeTJ_X3P2LjcYgPqo5-h-B-fRk1wE-ztIvd7EHtg_2mCHJyYK95_6q944Th_f0EoHPcGIaNfCZxCnBc9Tk54');
+        background-size: cover;
+        background-position: center;
+        opacity: 0.9;
+        
+        
+       
+    }
+    .box2{
+        width: 48%;
+        height: 50%;
+        margin-right: 2.5px;
+        float: left;
+        background-color: black;
+        background-image:url('https://2.share.photo.xuite.net/og01a/123b582/6458757/1131137021_x.jpg');
+        background-size:cover;
+        background-position:center;
+        opacity: 0.9;
+       
+    }
+    .box3{
+        width: 49%;
+        height: 50%;
+        float: left;
+        margin-left: 2px;
+        background-color:white;
+        background-image:url('https://s.yimg.com/ny/api/res/1.2/rRr8B_6vc.JJEm6JsHr9Ow--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9NDgwO2g9MjY0/http://33.media.tumblr.com/6029fde0744a7ddf5d4e3e236a28f4b8/tumblr_o3ahfsQIBp1sotwrfo1_500.gif');
+        background-size:cover;
+        background-position:right;
+        opacity: 0.9;
+        
+    }
+
+}
+@media(max-width:1000px){
+    
+body{
+    margin: 0;
+    
+   
+}
+.background{
+    width: 100%;  
+    height: 100vh;
+    background-color: lightcoral;
+}
+.sidebar{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(133, 96, 96);
+    position: relative;
+    padding: 20px 20px;
+    
+}
+.sidebar-box{
+    margin: 0;
+    width: 40px;
+    height: 50px;
+    background-color: khaki;
+    background-image: url('https://previews.123rf.com/images/vectortwins/vectortwins1510/vectortwins151000044/46666626-luxury-vintage-logo.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+   
+}
+.logo{
+    margin:0;
+    width:54px;
+    height: 54px;
+    background-color: burlywood;
+    background-position: 40% 50%;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+
+}
+.nav_btn{
+  display: none;
+    
+}
+.btn{
+    display: block;
+    font-size: 24px;
+    line-height: 48px;
+}
+.main{
+    width:100%;
+    height: calc(100% - 80px);
+    background-color: lightblue;
+    background-image: url('https://us.123rf.com/450wm/siraphol/siraphol1502/siraphol150205026/36705139-headlight-lamp-vintage-classic-car-vintage-effect-style-pictures.jpg?ver=6');
+    background-size: cover;
+    background-position: center;
+    float: right;
+    position: relative;
+    
+}
+.mask{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.mask:hover{
+    opacity: 0;
+    transition: 3s;
+}
+.right_area{
+    width: 100%;
+    height: 100%;
+    
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50% , -50%);
+
+}
+.box1{
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 5px;
+    background-color: maroon;
+    background-image: url('https://lh4.googleusercontent.com/UVDgDhmxyTvs_lE2fx1_bmNHReQYagwH6Gv9BkjZowb9Cp4L-p2ZeTJ_X3P2LjcYgPqo5-h-B-fRk1wE-ztIvd7EHtg_2mCHJyYK95_6q944Th_f0EoHPcGIaNfCZxCnBc9Tk54');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+    
+    
+   
+}
+.box2{
+    width: 100%;
+    height: 50vh;
+    margin-right: 10px;
+   margin-bottom: 5px;
+    background-color: black;
+    background-image:url('https://2.share.photo.xuite.net/og01a/123b582/6458757/1131137021_x.jpg');
+    background-size:cover;
+    background-position:center;
+    opacity: 0.9;
+   
+}
+.box3{
+    width: 100%;
+    height: 50vh;
+    
+    
+    background-color:white;
+    background-image:url('https://s.yimg.com/ny/api/res/1.2/rRr8B_6vc.JJEm6JsHr9Ow--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9NDgwO2g9MjY0/http://33.media.tumblr.com/6029fde0744a7ddf5d4e3e236a28f4b8/tumblr_o3ahfsQIBp1sotwrfo1_500.gif');
+    background-size:cover;
+    background-position:right;
+    opacity: 0.9;
+    
+}
+}
+ 
