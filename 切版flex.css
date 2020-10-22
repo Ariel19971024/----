@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    display: flex;
+}
+/* 這裡社flex主要是針對sidebar和main兩大區塊 */
+.sidemenue{
+    width: 366px;
+    height: 100vh;
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    /* 這裡的flex是分配sidebar裡的東西位置，column是要裡面的東西要排成一直線 */
+    
+}
+.sidebox{
+    
+    width: 150px;
+    height: 150px;
+    background-color:bisque;
+    margin: 108px 108px;
+    background-image: url('https://previews.123rf.com/images/provector/provector1510/provector151000003/45876825-vintage-ornament-greeting-card-vector-template-retro-wedding-invitations-advertising-or-other-design.jpg');
+    background-size: cover;
+    background-position: center;
+    
+  
+
+}
+.btn{
+    font-size: 24px;
+    display: flex;
+   flex-direction: column;
+   margin: 0px 134px;
+   
+}
+.main{
+    width: calc(100% - 366px);
+    height: 100vh;
+    background-color: burlywood;
+    background-image: url('https://previews.123rf.com/images/alexraths/alexraths1508/alexraths150800058/43659794-vintage-silverware-with-a-twig-of-rosemary-and-empty-tag-on-rustic-wooden-background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainbox{
+    width: 960px;
+    height: 570px;
+    background-color: cornsilk;
+    padding: 5px;
+    display: flex; 
+}
+/* padding是在匡格內再加一些長度 */
+
+.box{
+   
+    flex: 1;
+    height: 100%;
+    background-color: blue;
+   
+}
+.box:hover{
+    flex-grow: 5;
+}
+
+
+ .mask{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.mask:hover{
+    
+    opacity: 0.3;
+    transition: 0.3s;
+    
+} 
+.box1{
+    background-image: url('https://media.giphy.com/media/kiuZpB9EOVUo4lYqS6/giphy.gif');
+    background-size: cover;
+    background-position: center;
+    background-color: darkcyan;
+    margin-right: 5px;
+}
+.box2{
+    margin-right: 5px;
+    background-color: rgb(78, 78, 114);
+    background-image: url('https://media2.giphy.com/media/eeYtwiYHARla8/giphy.gif?cid=790b7611eacb6da1e13ce1c0d32b1095a960628e3a3aad00&rid=giphy.gif');
+    background-size: cover;
+    background-position: center;
+    
+}
+.box3{
+    background-color: rgb(53, 70, 70);
+    background-image: url('https://media1.giphy.com/media/lzWnRSsKdK1GM/giphy.gif?cid=790b76115879168233658aaff9a0b6ae05cd1270af0c004a&rid=giphy.gif');
+    background-size: cover;
+    background-position: center;
+}
