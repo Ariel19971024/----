@@ -2,7 +2,7 @@ body{
     margin: 0;
 }
 .header{
-    width: 100vw;
+    width: 100%;
     height: 49px;
     background-color: white;
     display: flex;
@@ -26,15 +26,28 @@ body{
     
     
 }
-#btn{
+.btn-area a{
+    text-decoration: none;
+}
+.btn-area a:hover{
+    border: black 1px dashed;
+    border-bottom: 3px solid;
+    /* text-decoration: underline; */
+}
+
+#btn a{
     
     margin: 5px;
 }
+
 .list{
   font-size: 16px;
   position: absolute ;
   right: 24%;
   top: 28%;
+}
+.line{
+    display: none;
 }
 .A{
     position: absolute;
@@ -53,7 +66,7 @@ body{
 }
 
 .top{
-    width: 100vw;
+    width: 100%;
     height: 538px;
    
    display: flex;
@@ -63,8 +76,8 @@ body{
 
 }
 .top-main{
-
-    width: 1560px;
+    position: relative;
+    width: 81%;
     height: 100%;
     background-color: bisque;
     background-image: url('https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4G3TF?ver=2c5a&q=0&m=8&h=600&w=1600&b=%23FFFFFFFF&l=f&x=0&y=198&s=2120&d=795&aim=true');
@@ -90,16 +103,16 @@ body{
     margin-left: 80px;
 }
 .srollbtn1{
-    opacity: 0.7;
+    opacity: 0.6;
     position: absolute;
     top: 50%;
-    right: 190px;
+    right: 1%;
 }
 .srollbtn2{
-   opacity: 0.7;
+   opacity: 0.6;
     position: absolute;
     top: 50%;
-    left: 190px;
+    left: 1%;
     
 }
 .topline{
@@ -167,19 +180,35 @@ body{
 .picture_area{
     width: 100vw;
     height: 500px;
-   
     
-    
+    display: flex;
+    justify-content: center;
 }
+
+
 .picture_area_picture{
     width: 1560px;
-    height: 200px;
+    height: 470px;
     
-    margin:10px 180px;
-    padding: 10px 30px;
+    padding: 10px 10px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
 }
+.picture_area_inside{
+    width:341px ;
+    height: 470px;
+    
+}
+.part1{
+    margin-right:10px ;
+}
+.part2{
+    margin-right:10px ;
+}
+.part3{
+    margin-right:10px ;
+}
+
 .picture_area_picture1{
     width: 341px;
     height: 200px;
@@ -189,42 +218,28 @@ body{
     background-image: url('https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3NYMe?ver=7b0e&q=90&m=6&h=157&w=279&b=%23FFFFFFFF&l=f&o=t&aim=true');
    background-size: cover;
    background-position: center;
-    margin-right: 57px;
+    
 }
 .B1{
     background-image: url('https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4E4rR?ver=1daf&q=90&m=6&h=195&w=348&b=%23FFFFFFFF&l=f&o=t&aim=true');
    background-size: cover;
    background-position: center;
-    margin-right: 57px;
+    
 }
 .C1{
     background-image: url('https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4CFyx?ver=25c5&q=90&m=6&h=195&w=348&b=%23FFFFFFFF&l=f&o=t&x=839&y=615&aim=true');
     background-size: cover;
     background-position: center;
-    margin-right: 57px;
+    
 }
 .D1{
     background-image: url('https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4dUlg?ver=c684&q=90&m=6&h=195&w=348&b=%23FFFFFFFF&l=f&o=t&aim=true');
     background-size: cover;
     background-position: center;
 }
-.picture_area_text{
-    width: 1638px;
-    height: 270px;
-    
-    margin: 0px 180px;
-    display: flex;
-    justify-content: flex-start;
-}
-.tA{
-    margin-left: 100px;
-    margin-right: 130px;
-}
-.tB{
-    margin-right: 100px;
-}
-.tC{
-    margin-right: 100px;
+.picture_area_text1{
+   
+    width: 340px;
 }
 .microsoft-edge{
     height: 538px;
@@ -265,12 +280,21 @@ body{
     left: 46%;
     padding: 5px;
 }
-.workplace{
-    font-size: 30px;
-    width: 100vw;
-    height: 50px;
-    margin-left: 10%;
+.work_area{
+    width:100vw;
+    height: 80px;
+    
+    position: relative;
 }
+.work_input{
+    font-size: 25px;
+    width: 400px;
+    height: 80px;
+    
+    position: absolute;
+    left:9%
+}
+
 .A11{
     background-image: url('https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3NOmH?ver=7f46&q=90&m=6&h=201&w=358&b=%23FFFFFFFF&l=f&o=t&aim=true');
 }
@@ -282,6 +306,9 @@ body{
 }
 .D11{
     background-image:url('https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4rzs9?ver=5f61&q=90&m=6&h=201&w=358&b=%23FFFFFFFF&l=f&o=t&x=329&y=155&aim=true')
+}
+.tAA{
+    font-size: 18px;
 }
 .link_area{
     width: 100vw;
@@ -324,6 +351,315 @@ background-size: cover;
     background-position: center;
     background-size: cover;
 }
+.footer{
+    width: 100vw;
+    height: 324px;
+    background-color: rgb(230, 228, 228);
+    display: flex;
+    justify-content: center;
+}
+.footer_main{
+    width: 1621px;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_box{
+    width: 231px;
+    height:228px;
+    
+}
+.m1{
+    margin-right:20px ;
+}
+.m1 :hover{
+    text-decoration: black;
+}
+.m2{
+    margin-right:20px ;
+}
+.m3{
+    margin-right:20px ;
+}
+.m4{
+    margin-right:20px ;
+}
+.m5{
+    margin-right:20px ;
+}
+.footerend{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(230, 228, 228);
+}
+.footercontent{
+    width: 100%;
+    height: 90px;
+    
+    
+    position: relative;
+}
+.tag1{
+    position: absolute;
+    top:25% ;
+    left: 15%;
+}
+.tag_area{
+    width: 650px;
+    height: 70px;
+    
+    position: absolute;
+    right: 2%;
+    display: flex;
+    align-items: center;
+    
+    
+}
+.tag7{
+   
+    
+    
+}
+.tag6{
+    margin-right: 5px;
+}
+.tag5{
+    margin-right: 5px;
+}
+.tag4{
+    margin-right: 5px;
+}
+.tag3{
+    margin-right: 5px;
+}
+.tag2{
+    margin-right: 5px;
+}
+
+
+
+@media(max-width: 1252px){
+    .header{
+        width: 100%;
+        height: 49px;
+        
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding-bottom: 10px;
+    }
+    .logo{
+        width: 225px;
+        height: 44px;
+        
+        background-image: url('https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31');
+        background-size: cover;
+        background-position: center;
+        margin-left: 40%;
+        top: 5%;
+    }
+    .btn-area{
+        display: none;
+        
+        padding: 10px;
+        
+        
+    }
+    .list{
+        display: none;
+    }
+    .line{
+        position: absolute;
+        left: 5%;
+        top:28%;
+    }
+    .A{
+        position: absolute;
+        left: 9%;
+        top:28%;
+    }
+    .B{
+        position: absolute;
+        left: 80%;
+        top:28%;
+    }
+    .C{
+        position: absolute;
+        left: 90%;
+        top:28%;
+    }
+    .top-main{
+        width: 100%;
+    }
+    .picture_area{
+        width: 100%;
+        height: 1100px;
+        
+        
+    }
+    .picture_area_picture{
+        width: 100%;
+        height: 100%;
+       
+        
+       position: relative;
+    }
+    .part1{
+        width: 49%;
+        height: 45%;
+       
+        position: absolute;
+        left: 3%;
+    }
+    .part2{
+        width: 49%;
+        height: 45%;
+       
+        
+        position: absolute;
+        
+        left: 53%;
+    }
+    .part3{
+        width: 49%;
+        height: 45%;
+       
+        position: absolute;
+        top:50%;
+        left: 3%;
+    }
+    .part4{
+        width: 49%;
+        height: 45%;
+        
+        position: absolute;
+        top:50%;
+        left: 53%;
+        
+    }
+    .picture_area_picture1{
+        width: 90%;
+        height: 60%;
+        
+    }
+    .A1{
+        background-image: url('https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3NYMe?ver=7b0e&q=90&m=6&h=157&w=279&b=%23FFFFFFFF&l=f&o=t&aim=true');
+       background-size: cover;
+       background-position: center;
+        
+    }
+    .B1{
+        background-image: url('https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4E4rR?ver=1daf&q=90&m=6&h=195&w=348&b=%23FFFFFFFF&l=f&o=t&aim=true');
+       background-size: cover;
+       background-position: center;
+        
+    }
+    .C1{
+        background-image: url('https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4CFyx?ver=25c5&q=90&m=6&h=195&w=348&b=%23FFFFFFFF&l=f&o=t&x=839&y=615&aim=true');
+        background-size: cover;
+        background-position: center;
+        
+    }
+    .D1{
+        background-image: url('https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4dUlg?ver=c684&q=90&m=6&h=195&w=348&b=%23FFFFFFFF&l=f&o=t&aim=true');
+        background-size: cover;
+        background-position: center;
+    }
+    .picture_area_text1{
+       
+        width: 63%;
+    } 
+    .A11{
+        background-image: url('https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3NOmH?ver=7f46&q=90&m=6&h=201&w=358&b=%23FFFFFFFF&l=f&o=t&aim=true');
+    }
+    .B11{
+        background-image: url('https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4E4rT?ver=2072&q=90&m=6&h=201&w=358&b=%23FFFFFFFF&l=f&o=t&aim=true');
+    }
+    .C11{
+        background-image: url('https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4DfTp?ver=8993&q=90&m=6&h=201&w=358&b=%23FFFFFFFF&l=f&o=t&x=991&y=506&aim=true');
+    }
+    .D11{
+        background-image:url('https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4rzs9?ver=5f61&q=90&m=6&h=201&w=358&b=%23FFFFFFFF&l=f&o=t&x=329&y=155&aim=true')
+    } 
+    .microsoft-edge-main{
+        position: relative;
+        width: 100%;
+    }
+    .microsoft-edge-main-btn{
+        position: absolute;
+        top: 32%;
+    }
+
+    .footer{
+        background-color:rgb(230, 228, 228);
+        width: 100%;
+        height: 624px;
+        
+        display: flex;
+        justify-content: center;
+    }
+    .footer_main{
+        width: 1200px;
+        height: 100%;
+        
+        position: relative;
+       
+    }
+    .footer_box{
+        
+        width: 350px;
+        height:228px;
+        
+    }
+    .m1{
+        position: absolute;
+        left: 1%;
+        top: 1%;
+    }
+    .m2{
+        position: absolute;
+        left: 35%;
+        top: 1%;
+    }
+    .m3{
+        position: absolute;
+        left: 60%;
+        top: 1%;
+    }
+    .m4{
+        position: absolute;
+        left: 1%;
+        top: 40%;
+    }
+    .m5{
+        position: absolute;
+        left: 35%;
+        top: 40%;
+    }
+    
+    .m6{
+        position: absolute;
+        left: 65%;
+        top: 40%;
+    } 
+    .global{
+        width:200px ;
+        height: 20px;
+        background-color: crimson;
+    } 
+    .footercontent{
+        width: 100%;
+        height: 90px;
+        
+        
+        position: relative;
+    }
+    .tag1{
+        position: absolute;
+        top: 5%;
+    }
 
 
 
