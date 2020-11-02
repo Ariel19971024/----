@@ -1,0 +1,132 @@
+.background{
+    width: 100%;
+    height: 300px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background_picture{
+    width: 56%;
+    height: 79%;
+    background-color: brown;
+    background-image: url('https://static.pzcdn.tw/sff/pazzo/static/img/login-img.png');
+    background-position: center;
+    background-size: cover;
+}
+.inputarea{
+    width: 100%;
+    height:400px ;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputleft{
+    width: 28%;
+    height:300px ;
+    /* background-color: cornflowerblue; */
+    border-right: black 2px solid;
+    /* display: flex;
+    align-items: flex-start;
+    position: relative; */
+
+}
+.title_area{
+    width: 100%;
+    height:20% ;
+    /* background-color: blanchedalmond; */
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* 利用wrap的打包方式進行打包使其超過會換行 */
+.lefttitle{
+    width: 120px;
+    height: 50%;
+    background-image: url('https://static.pzcdn.tw/sff/pazzo/static/img/signin-title.png');
+   background-position: top;
+   background-size: cover;
+   margin-right: 15px;
+   
+}
+.leftalert{
+  line-height: 30px;
+  color: rgb(138, 134, 134);  
+   
+}
+.signinarea{
+    width: 100%;
+    height: 80%;
+    /* background-color: indigo; */
+    display: flex;
+    
+    
+    flex-direction: column;
+    
+}
+.address{
+    width: 95%;
+    height:40px ;
+    border: rgb(85, 84, 84) 1px solid;
+    border-radius: 10px;
+    margin-bottom: 15px;
+
+}
+.password{
+    width: 95%;
+    height:40px ;
+    border: black 1px solid;
+    border-radius:10px ;
+    margin-bottom: 10px;
+}
+#passwordforget{
+   font-size: 10px;
+   color: rgb(83, 80, 80);
+    width: 55px;
+}
+#passwordforget:hover{
+    border-bottom:black 2px solid ;
+}
+.signcheck{
+    width: 95% ;
+    height:40px ;
+    background-color:  rgb(233, 202, 161);
+    border-radius:10px ;
+    border: none;
+    margin-top: 10px;
+}
+::placeholder{
+    color: gray;
+    
+   
+}
+.passwordagain{
+    width: 95%;
+    height:40px ;
+    border: black 1px solid;
+    border-radius:10px ;
+    margin-left: 20px; 
+}
+.right{
+    margin-left: 20px;
+}
+.inputright{
+    width: 28%;
+    height:300px ;
+    background-color:white;
+}
+.righttitle{
+    width: 120px;
+    height: 50%;
+    background-image: url('https://static.pzcdn.tw/sff/pazzo/static/img/register-title.png');
+   background-position: top;
+   background-size: cover; 
+   margin-left: 20px; 
+   margin-right:10px ;
+}
+.rightalert{
+    line-height: 30px;
+    color: rgb(138, 134, 134);  
+     
+  }
