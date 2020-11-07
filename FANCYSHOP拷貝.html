@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="js事件處理.css">
+</head>
+<body onload="link();">
+    <!-- <button id="btn"><i class="fa fa-bell" aria-hidden="true"></i>訂閱</button> -->
+    <div class="main">
+         <div class="comercial">
+             <span id='timer'>3</span>    
+        </div>
+        
+        
+    </div>
+
+<script>
+     function link(){
+         timer=document.getElementById('timer');
+         window.setTimeout(count,1000);
+     }
+     function count(){
+         timer.innerText=timer.innerText-1;
+         if(timer.innerText>0){
+            window.setTimeout(count,1000);
+         }
+         else{
+             document.location='https://ariel19971024.github.io/HTML/FANCYSHOP';
+
+         }
+     }
+
+    // function link(){
+    //     var data=document.getElementById('btn');
+        
+    //     console.log(data);
+        
+    //     data.onclick=function(){
+    //         if (data.innerText=='訂閱'){
+    //         const data1=document.getElementById('btn').innerText='已訂閱';
+    //         console.log(data1);
+    //         const color=document.getElementById('btn').style.backgroundColor='gray';
+    //         return(data1,color);
+    //         } 
+    //     }
+           
+    //     }  
+    // link(); 
+            
+
+            
+           
+        
+        
+         
+             
+  
+        
+            
+        
+         
+      
+            
+        
+           
+
+        
+      
+
+    
+    
+</script>
+    
+</body>
+</html>
+<!-- return兩個值能傳回兩種特性 -->
