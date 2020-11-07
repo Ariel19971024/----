@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="購物單.css">
+
+</head>
+<body onload="link();">
+    <div id="header">
+        <form name="form" id='form'>
+            <input type="search" placeholder="search">
+           
+        </form>
+         <h2 class="brand">F A N C Y</h2>
+         <button id="btn"><i class="fa fa-bell" aria-hidden="true"></i>訂閱</button>
+         <div class="btn_area">
+            <div class="btn A"><a href='#' class='egl' style='text-decoration: none;'>NEW</a>
+                                
+                               <a href='#' class='chi'  style='text-decoration: none;'>新品</a>
+            </div>
+            <div class="btn B"><a href='#' class='egl2'  style='text-decoration: none;color:rgb(112, 60, 60);'>RESTOCK</a>
+                               <a href='#' class='chi2'  style='text-decoration: none;color:rgb(112, 60, 60);'>熱銷補貨</a>
+            </div>
+            <div class="btn C"><a href='#' class='egl3'  style='text-decoration: none;color:rgb(112, 60, 60);'>PRE-ORDER</a>
+                             <a href='#' class='chi3'  style='text-decoration: none;color:rgb(112, 60, 60);'>人氣預定</a>
+            </div>
+            <div class="btn D"><a href='#' class='egl4'  style='text-decoration: none;color:rgb(112, 60, 60);'>FANCY x Q</a>
+                               <a href='#' class='chi4'  style='text-decoration: none;color:rgb(112, 60, 60);'>風格設計</a>
+            </div>
+            <div class="btn E"><a href='#' class='egl5'  style='text-decoration: none;color:rgb(112, 60, 60);'>SALE</a>
+                               <a href='#' class='chi5'  style='text-decoration: none;color:rgb(112, 60, 60);'>特別折扣</a>
+            </div>
+        </div>
+        
+    </div>
+    <div class="main">
+         <div class="sidebar">
+             <div class="list list1">
+                <div class="clickmenue" onclick="menu(1);">本週新品</div>
+                <ul style="list-style-type:none"  id='scroll-1'>
+                    
+                    <li ><a href="#"  style="color: rgb(125, 125, 197);text-decoration: none;">2020必買TOP 10</a></li>
+                    <li><a href="#" style="color: rgb(125, 125, 197);text-decoration: none;">秋冬熱搜西裝外套</a></li>
+                    <li><a href="#" style="color: rgb(125, 125, 197);text-decoration: none;">經典撞色下著</a></li>
+                    <li><a href="#" style="color: rgb(125, 125, 197);text-decoration: none;">運動機能系列</a></li>
+                    <li><a href="#" style="color: rgb(125, 125, 197);text-decoration: none;">聯名系列</a></li>  
+  
+                </ul> 
+             </div>
+             <div class="list list2">
+                <div class="clickmenue" onclick="menu(2);">限時折扣</div>
+                <ul style="list-style-type:none" id='scroll-2'>
+                    
+                    <li ><a href="#"  style="color: rgb(125, 125, 197);text-decoration: none;">精選新品．下殺9折</a></li>
+                    <li><a href="#" style="color: rgb(125, 125, 197);text-decoration: none;">秋冬精選．2件折100元</a></li>
+                    <li><a href="#" style="color: rgb(125, 125, 197);text-decoration: none;">古著精選．1件500元起</a></li>
+                </ul> 
+             </div>
+             <div class="list list3">
+                <div class="clickmenue" onclick="menu(3);">優惠組合</div>
+                <ul style="list-style-type:none" id='scroll-3'>
+                    
+                    <li ><a href="#"  style="color: rgb(125, 125, 197);text-decoration: none;">精選新品．下殺9折</a></li>
+                    <li><a href="#" style="color: rgb(125, 125, 197);text-decoration: none;">秋冬精選．2件折100元</a></li>
+                    <li><a href="#" style="color: rgb(125, 125, 197);text-decoration: none;">古著精選．1件500元起</a></li>
+                </ul> 
+             </div>
+             <div class="list list4">
+                <div class="clickmenue" onclick="menu(4);">上身系列</div>
+                <ul style="list-style-type:none" id='scroll-4'>
+                    <li ><a href="#"  style="color: rgb(125, 125, 197);text-decoration: none;">精選新品．下殺9折</a></li>
+                    <li><a href="#" style="color: rgb(125, 125, 197);text-decoration: none;">秋冬精選．2件折100元</a></li>
+                    <li><a href="#" style="color: rgb(125, 125, 197);text-decoration: none;">古著精選．1件500元起</a></li>
+                    
+                </ul> 
+             </div>
+             <div class="list list5">
+                <div class="clickmenue" onclick="menu(5);">下身系列</div>
+                <ul style="list-style-type:none" id='scroll-5'>
+                    <li ><a href="#"  style="color: rgb(125, 125, 197);text-decoration: none;">精選新品．下殺9折</a></li>
+                    <li><a href="#" style="color: rgb(125, 125, 197);text-decoration: none;">秋冬精選．2件折100元</a></li>
+                    <li><a href="#" style="color: rgb(125, 125, 197);text-decoration: none;">古著精選．1件500元起</a></li>
+                </ul> 
+             </div>
+             <div class="list list6">
+                <div class="clickmenue" onclick="menu(6);">連身套裝</div>
+                <ul style="list-style-type:none" id='scroll-6'>
+                    <li ><a href="#"  style="color: rgb(125, 125, 197);text-decoration: none;">精選新品．下殺9折</a></li>
+                    <li><a href="#" style="color: rgb(125, 125, 197);text-decoration: none;">秋冬精選．2件折100元</a></li>
+                    <li><a href="#" style="color: rgb(125, 125, 197);text-decoration: none;">古著精選．1件500元起</a></li>
+                </ul> 
+             </div>
+             <div class="list list7">
+                <div class="clickmenue" onclick="menu(7);">居家內著</div>
+                <ul style="list-style-type:none" id='scroll-7'>
+                <li ><a href="#"  style="color: rgb(125, 125, 197);text-decoration: none;">精選新品．下殺9折</a></li>
+                <li><a href="#" style="color: rgb(125, 125, 197);text-decoration: none;">秋冬精選．2件折100元</a></li>
+                <li><a href="#" style="color: rgb(125, 125, 197);text-decoration: none;">古著精選．1件500元起</a></li>
+            </ul> </div>
+            
+         </div>
+         <div class="mainright">
+             <div class="cloth_area">
+                 <div class="picturewrap">
+                     <div class="pictureA A1"></div>
+                     <div class="text">  基礎中性保暖針織上衣
+                         <p class="subtitles">此版型寬鬆</p>
+                         <div class="click_area">
+                            <input type="button" value="+" onclick="jia()" class="bb">
+                            <input id="zhi" type="text" value="0">
+                            <input type="button" value="-"onclick="jian()" class="cc">
+
+                         </div>
+                         <form>
+                             <label>選擇尺寸</label>
+                             <select name="sizelist">
+                                <option value="size1">S
+                                <option value="size2">M
+                                <option value="size3">L   
+                             </select>
+                             
+                         </form>
+                         <form>
+                             <input type="submit" value="submit" id='submitname'>
+                         </form>
+                     </div>
+                 </div>
+                 <div class="picturewrap">
+                     <div class="pictureA A2"></div>
+                     <div class="text">基礎中性保暖針織上衣
+                        <p class="subtitles">此版型寬鬆</p>
+                        <div class="click_area">
+                            <input type="button" value="+" onclick="jia()" class="bb">
+                            <input id="zhi" type="text" value="0">
+                            <input type="button" value="-"onclick="jian()" class="cc">
+
+                         </div>
+                         <form>
+                             <label>選擇尺寸</label>
+                             <select name="sizelist">
+                                <option value="size1">S
+                                <option value="size2">M
+                                <option value="size3">L   
+                             </select>
+                             
+                         </form>
+                         <form>
+                             <input type="submit" value="submit" id='submitname'>
+                         </form>
+                     </div>
+                 </div>
+                 <div class="picturewrap">
+                    <div class="pictureA A3"></div>
+                    <div class="text">基礎中性保暖針織上衣
+                       <p class="subtitles">此版型寬鬆</p>
+                       <div class="click_area">
+                           <input type="button" value="+" onclick="jia()" class="bb">
+                           <input id="zhi" type="text" value="0">
+                           <input type="button" value="-"onclick="jian()" class="cc">
+
+                        </div>
+                        <form>
+                            <label>選擇尺寸</label>
+                            <select name="sizelist">
+                               <option value="size1">S
+                               <option value="size2">M
+                               <option value="size3">L   
+                            </select>
+                            
+                        </form>
+                        <form>
+                            <input type="submit" value="submit" id='submitname'>
+                        </form>
+                    </div>
+                </div>
+                <div class="picturewrap">
+                    <div class="pictureA A4"></div>
+                    <div class="text">基礎中性保暖針織上衣
+                       <p class="subtitles">此版型寬鬆</p>
+                       <div class="click_area">
+                           <input type="button" value="+" onclick="jia()" class="bb">
+                           <input id="zhi" type="text" value="0">
+                           <input type="button" value="-"onclick="jian()" class="cc">
+
+                        </div>
+                        <form>
+                            <label>選擇尺寸</label>
+                            <select name="sizelist">
+                               <option value="size1">S
+                               <option value="size2">M
+                               <option value="size3">L   
+                            </select>
+                            
+                        </form>
+                        <form>
+                            <input type="submit" value="submit" id='submitname'>
+                        </form>
+                    </div>
+                </div>
+                 
+                 
+                
+                 
+            </div>
+             <div class="cloth_area">
+                <div class="picturewrap">
+                    <div class="pictureA A5"></div>
+                    <div class="text">基礎中性保暖針織上衣
+                       <p class="subtitles">此版型寬鬆</p>
+                       <div class="click_area">
+                           <input type="button" value="+" onclick="jia()" class="bb">
+                           <input id="zhi" type="text" value="0">
+                           <input type="button" value="-"onclick="jian()" class="cc">
+
+                        </div>
+                        <form>
+                            <label>選擇尺寸</label>
+                            <select name="sizelist">
+                               <option value="size1">S
+                               <option value="size2">M
+                               <option value="size3">L   
+                            </select>
+                            
+                        </form>
+                        <form>
+                            <input type="submit" value="submit" id='submitname'>
+                        </form>
+                    </div>
+                </div>
+                <div class="picturewrap">
+                    <div class="pictureA A6"></div>
+                    <div class="text">基礎中性保暖針織上衣
+                       <p class="subtitles">此版型寬鬆</p>
+                       <div class="click_area">
+                           <input type="button" value="+" onclick="jia()" class="bb">
+                           <input id="zhi" type="text" value="0">
+                           <input type="button" value="-"onclick="jian()" class="cc">
+
+                        </div>
+                        <form>
+                            <label>選擇尺寸</label>
+                            <select name="sizelist">
+                               <option value="size1">S
+                               <option value="size2">M
+                               <option value="size3">L   
+                            </select>
+                            
+                        </form>
+                        <form>
+                            <input type="submit" value="submit" id='submitname'>
+                        </form>
+                    </div>
+                </div>
+                <div class="picturewrap">
+                    <div class="pictureA A7"></div>
+                    <div class="text">基礎中性保暖針織上衣
+                       <p class="subtitles">此版型寬鬆</p>
+                       <div class="click_area">
+                           <input type="button" value="+" onclick="jia()" class="bb">
+                           <input id="zhi" type="text" value="0">
+                           <input type="button" value="-"onclick="jian()" class="cc">
+
+                        </div>
+                        <form>
+                            <label>選擇尺寸</label>
+                            <select name="sizelist">
+                               <option value="size1">S
+                               <option value="size2">M
+                               <option value="size3">L   
+                            </select>
+                            
+                        </form>
+                        <form>
+                            <input type="submit" value="submit" id='submitname'>
+                        </form>
+                    </div>
+                </div>
+                <div class="picturewrap">
+                    <div class="pictureA A8"></div>
+                    <div class="text">基礎中性保暖針織上衣
+                       <p class="subtitles">此版型寬鬆</p>
+                       <div class="click_area">
+                           <input type="button" value="+" onclick="jia()" class="bb">
+                           <input id="zhi" type="text" value="0">
+                           <input type="button" value="-"onclick="jian()" class="cc">
+
+                        </div>
+                        <form>
+                            <label>選擇尺寸</label>
+                            <select name="sizelist">
+                               <option value="size1">S
+                               <option value="size2">M
+                               <option value="size3">L   
+                            </select>
+                            
+                        </form>
+                        <form>
+                            <input type="submit" value="submit" id='submitname'>
+                        </form>
+                    </div>
+                </div>
+           </div>
+           <div class="cloth_area">
+            <div class="picturewrap">
+                <div class="pictureA A1"></div>
+                <div class="text">  基礎中性保暖針織上衣
+                    <p class="subtitles">此版型寬鬆</p>
+                    <div class="click_area">
+                       <input type="button" value="+" onclick="jia()" class="bb">
+                       <input id="zhi" type="text" value="0">
+                       <input type="button" value="-"onclick="jian()" class="cc">
+
+                    </div>
+                    <form>
+                        <label>選擇尺寸</label>
+                        <select name="sizelist">
+                           <option value="size1">S
+                           <option value="size2">M
+                           <option value="size3">L   
+                        </select>
+                        
+                    </form>
+                    <form>
+                        <input type="submit" value="submit" id='submitname'>
+                    </form>
+                </div>
+            </div>
+            <div class="picturewrap">
+                <div class="pictureA A2"></div>
+                <div class="text">基礎中性保暖針織上衣
+                   <p class="subtitles">此版型寬鬆</p>
+                   <div class="click_area">
+                       <input type="button" value="+" onclick="jia()" class="bb">
+                       <input id="zhi" type="text" value="0">
+                       <input type="button" value="-"onclick="jian()" class="cc">
+
+                    </div>
+                    <form>
+                        <label>選擇尺寸</label>
+                        <select name="sizelist">
+                           <option value="size1">S
+                           <option value="size2">M
+                           <option value="size3">L   
+                        </select>
+                        
+                    </form>
+                    <form>
+                        <input type="submit" value="submit" id='submitname'>
+                    </form>
+                </div>
+            </div>
+            <div class="picturewrap">
+               <div class="pictureA A3"></div>
+               <div class="text">基礎中性保暖針織上衣
+                  <p class="subtitles">此版型寬鬆</p>
+                  <div class="click_area">
+                      <input type="button" value="+" onclick="jia()" class="bb">
+                      <input id="zhi" type="text" value="0">
+                      <input type="button" value="-"onclick="jian()" class="cc">
+
+                   </div>
+                   <form>
+                       <label>選擇尺寸</label>
+                       <select name="sizelist">
+                          <option value="size1">S
+                          <option value="size2">M
+                          <option value="size3">L   
+                       </select>
+                       
+                   </form>
+                   <form>
+                       <input type="submit" value="submit" id='submitname'>
+                   </form>
+               </div>
+           </div>
+           <div class="picturewrap">
+               <div class="pictureA A4"></div>
+               <div class="text">基礎中性保暖針織上衣
+                  <p class="subtitles">此版型寬鬆</p>
+                  <div class="click_area">
+                      <input type="button" value="+" onclick="jia()" class="bb">
+                      <input id="zhi" type="text" value="0">
+                      <input type="button" value="-"onclick="jian()" class="cc">
+
+                   </div>
+                   <form>
+                       <label>選擇尺寸</label>
+                       <select name="sizelist">
+                          <option value="size1">S
+                          <option value="size2">M
+                          <option value="size3">L   
+                       </select>
+                       
+                   </form>
+                   <form>
+                       <input type="submit" value="submit" id='submitname'>
+                   </form>
+               </div>
+           </div>
+            
+            
+           
+            
+       </div>
+       <div class="cloth_area">
+        <div class="picturewrap">
+            <div class="pictureA A1"></div>
+            <div class="text">  基礎中性保暖針織上衣
+                <p class="subtitles">此版型寬鬆</p>
+                <div class="click_area">
+                   <input type="button" value="+" onclick="jia()" class="bb">
+                   <input id="zhi" type="text" value="0">
+                   <input type="button" value="-"onclick="jian()" class="cc">
+
+                </div>
+                <form>
+                    <label>選擇尺寸</label>
+                    <select name="sizelist">
+                       <option value="size1">S
+                       <option value="size2">M
+                       <option value="size3">L   
+                    </select>
+                    
+                </form>
+                <form>
+                    <input type="submit" value="submit" id='submitname'>
+                </form>
+            </div>
+        </div>
+        <div class="picturewrap">
+            <div class="pictureA A2"></div>
+            <div class="text">基礎中性保暖針織上衣
+               <p class="subtitles">此版型寬鬆</p>
+               <div class="click_area">
+                   <input type="button" value="+" onclick="jia()" class="bb">
+                   <input id="zhi" type="text" value="0">
+                   <input type="button" value="-"onclick="jian()" class="cc">
+
+                </div>
+                <form>
+                    <label>選擇尺寸</label>
+                    <select name="sizelist">
+                       <option value="size1">S
+                       <option value="size2">M
+                       <option value="size3">L   
+                    </select>
+                    
+                </form>
+                <form>
+                    <input type="submit" value="submit" id='submitname'>
+                </form>
+            </div>
+        </div>
+        <div class="picturewrap">
+           <div class="pictureA A3"></div>
+           <div class="text">基礎中性保暖針織上衣
+              <p class="subtitles">此版型寬鬆</p>
+              <div class="click_area">
+                  <input type="button" value="+" onclick="jia()" class="bb">
+                  <input id="zhi" type="text" value="0">
+                  <input type="button" value="-"onclick="jian()" class="cc">
+
+               </div>
+               <form>
+                   <label>選擇尺寸</label>
+                   <select name="sizelist">
+                      <option value="size1">S
+                      <option value="size2">M
+                      <option value="size3">L   
+                   </select>
+                   
+               </form>
+               <form>
+                   <input type="submit" value="submit" id='submitname'>
+               </form>
+           </div>
+       </div>
+       <div class="picturewrap">
+           <div class="pictureA A4"></div>
+           <div class="text">基礎中性保暖針織上衣
+              <p class="subtitles">此版型寬鬆</p>
+              <div class="click_area">
+                  <input type="button" value="+" onclick="jia()" class="bb">
+                  <input id="zhi" type="text" value="0">
+                  <input type="button" value="-"onclick="jian()" class="cc">
+
+               </div>
+               <form>
+                   <label>選擇尺寸</label>
+                   <select name="sizelist">
+                      <option value="size1">S
+                      <option value="size2">M
+                      <option value="size3">L   
+                   </select>
+                   
+               </form>
+               <form>
+                   <input type="submit" value="submit" id='submitname'>
+               </form>
+           </div>
+       </div>
+        
+        
+       
+        
+   </div>
+   <div class="cloth_area">
+    <div class="picturewrap">
+        <div class="pictureA A1"></div>
+        <div class="text">  基礎中性保暖針織上衣
+            <p class="subtitles">此版型寬鬆</p>
+            <div class="click_area">
+               <input type="button" value="+" onclick="jia()" class="bb">
+               <input id="zhi" type="text" value="0">
+               <input type="button" value="-"onclick="jian()" class="cc">
+
+            </div>
+            <form>
+                <label>選擇尺寸</label>
+                <select name="sizelist">
+                   <option value="size1">S
+                   <option value="size2">M
+                   <option value="size3">L   
+                </select>
+                
+            </form>
+            <form>
+                <input type="submit" value="submit" id='submitname'>
+            </form>
+        </div>
+    </div>
+    <div class="picturewrap">
+        <div class="pictureA A2"></div>
+        <div class="text">基礎中性保暖針織上衣
+           <p class="subtitles">此版型寬鬆</p>
+           <div class="click_area">
+               <input type="button" value="+" onclick="jia()" class="bb">
+               <input id="zhi" type="text" value="0">
+               <input type="button" value="-"onclick="jian()" class="cc">
+
+            </div>
+            <form>
+                <label>選擇尺寸</label>
+                <select name="sizelist">
+                   <option value="size1">S
+                   <option value="size2">M
+                   <option value="size3">L   
+                </select>
+                
+            </form>
+            <form>
+                <input type="submit" value="submit" id='submitname'>
+            </form>
+        </div>
+    </div>
+    <div class="picturewrap">
+       <div class="pictureA A3"></div>
+       <div class="text">基礎中性保暖針織上衣
+          <p class="subtitles">此版型寬鬆</p>
+          <div class="click_area">
+              <input type="button" value="+" onclick="jia()" class="bb">
+              <input id="zhi" type="text" value="0">
+              <input type="button" value="-"onclick="jian()" class="cc">
+
+           </div>
+           <form>
+               <label>選擇尺寸</label>
+               <select name="sizelist">
+                  <option value="size1">S
+                  <option value="size2">M
+                  <option value="size3">L   
+               </select>
+               
+           </form>
+           <form>
+               <input type="submit" value="submit" id='submitname'>
+           </form>
+       </div>
+   </div>
+   <div class="picturewrap">
+       <div class="pictureA A4"></div>
+       <div class="text">基礎中性保暖針織上衣
+          <p class="subtitles">此版型寬鬆</p>
+          <div class="click_area">
+              <input type="button" value="+" onclick="jia()" class="bb">
+              <input id="zhi" type="text" value="0">
+              <input type="button" value="-"onclick="jian()" class="cc">
+
+           </div>
+           <form>
+               <label>選擇尺寸</label>
+               <select name="sizelist">
+                  <option value="size1">S
+                  <option value="size2">M
+                  <option value="size3">L   
+               </select>
+               
+           </form>
+           <form>
+               <input type="submit" value="submit" id='submitname'>
+           </form>
+       </div>
+   </div>
+    
+    
+   
+    
+</div>
+<div class="cloth_area">
+    <div class="picturewrap">
+        <div class="pictureA A1"></div>
+        <div class="text">  基礎中性保暖針織上衣
+            <p class="subtitles">此版型寬鬆</p>
+            <div class="click_area">
+               <input type="button" value="+" onclick="jia()" class="bb">
+               <input id="zhi" type="text" value="0">
+               <input type="button" value="-"onclick="jian()" class="cc">
+
+            </div>
+            <form>
+                <label>選擇尺寸</label>
+                <select name="sizelist">
+                   <option value="size1">S
+                   <option value="size2">M
+                   <option value="size3">L   
+                </select>
+                
+            </form>
+            <form>
+                <input type="submit" value="submit" id='submitname'>
+            </form>
+        </div>
+    </div>
+    <div class="picturewrap">
+        <div class="pictureA A2"></div>
+        <div class="text">基礎中性保暖針織上衣
+           <p class="subtitles">此版型寬鬆</p>
+           <div class="click_area">
+               <input type="button" value="+" onclick="jia()" class="bb">
+               <input id="zhi" type="text" value="0">
+               <input type="button" value="-"onclick="jian()" class="cc">
+
+            </div>
+            <form>
+                <label>選擇尺寸</label>
+                <select name="sizelist">
+                   <option value="size1">S
+                   <option value="size2">M
+                   <option value="size3">L   
+                </select>
+                
+            </form>
+            <form>
+                <input type="submit" value="submit" id='submitname'>
+            </form>
+        </div>
+    </div>
+    <div class="picturewrap">
+       <div class="pictureA A3"></div>
+       <div class="text">基礎中性保暖針織上衣
+          <p class="subtitles">此版型寬鬆</p>
+          <div class="click_area">
+              <input type="button" value="+" onclick="jia()" class="bb">
+              <input id="zhi" type="text" value="0">
+              <input type="button" value="-"onclick="jian()" class="cc">
+
+           </div>
+           <form>
+               <label>選擇尺寸</label>
+               <select name="sizelist">
+                  <option value="size1">S
+                  <option value="size2">M
+                  <option value="size3">L   
+               </select>
+               
+           </form>
+           <form>
+               <input type="submit" value="submit" id='submitname'>
+           </form>
+       </div>
+   </div>
+   <div class="picturewrap">
+       <div class="pictureA A4"></div>
+       <div class="text">基礎中性保暖針織上衣
+          <p class="subtitles">此版型寬鬆</p>
+          <div class="click_area">
+              <input type="button" value="+" onclick="jia()" class="bb">
+              <input id="zhi" type="text" value="0">
+              <input type="button" value="-"onclick="jian()" class="cc">
+
+           </div>
+           <form>
+               <label>選擇尺寸</label>
+               <select name="sizelist">
+                  <option value="size1">S
+                  <option value="size2">M
+                  <option value="size3">L   
+               </select>
+               
+           </form>
+           <form>
+               <input type="submit" value="submit" id='submitname'>
+           </form>
+       </div>
+   </div>
+    
+    
+   
+    
+</div>
+<div class="cloth_area">
+    <div class="picturewrap">
+        <div class="pictureA A1"></div>
+        <div class="text">  基礎中性保暖針織上衣
+            <p class="subtitles">此版型寬鬆</p>
+            <div class="click_area">
+               <input type="button" value="+" onclick="jia()" class="bb">
+               <input id="zhi" type="text" value="0">
+               <input type="button" value="-"onclick="jian()" class="cc">
+
+            </div>
+            <form>
+                <label>選擇尺寸</label>
+                <select name="sizelist">
+                   <option value="size1">S
+                   <option value="size2">M
+                   <option value="size3">L   
+                </select>
+                
+            </form>
+            <form>
+                <input type="submit" value="submit" id='submitname'>
+            </form>
+        </div>
+    </div>
+    <div class="picturewrap">
+        <div class="pictureA A2"></div>
+        <div class="text">基礎中性保暖針織上衣
+           <p class="subtitles">此版型寬鬆</p>
+           <div class="click_area">
+               <input type="button" value="+" onclick="jia()" class="bb">
+               <input id="zhi" type="text" value="0">
+               <input type="button" value="-"onclick="jian()" class="cc">
+
+            </div>
+            <form>
+                <label>選擇尺寸</label>
+                <select name="sizelist">
+                   <option value="size1">S
+                   <option value="size2">M
+                   <option value="size3">L   
+                </select>
+                
+            </form>
+            <form>
+                <input type="submit" value="submit" id='submitname'>
+            </form>
+        </div>
+    </div>
+    <div class="picturewrap">
+       <div class="pictureA A3"></div>
+       <div class="text">基礎中性保暖針織上衣
+          <p class="subtitles">此版型寬鬆</p>
+          <div class="click_area">
+              <input type="button" value="+" onclick="jia()" class="bb">
+              <input id="zhi" type="text" value="0">
+              <input type="button" value="-"onclick="jian()" class="cc">
+
+           </div>
+           <form>
+               <label>選擇尺寸</label>
+               <select name="sizelist">
+                  <option value="size1">S
+                  <option value="size2">M
+                  <option value="size3">L   
+               </select>
+               
+           </form>
+           <form>
+               <input type="submit" value="submit" id='submitname'>
+           </form>
+       </div>
+   </div>
+   <div class="picturewrap">
+       <div class="pictureA A4"></div>
+       <div class="text">基礎中性保暖針織上衣
+          <p class="subtitles">此版型寬鬆</p>
+          <div class="click_area">
+              <input type="button" value="+" onclick="jia()" class="bb">
+              <input id="zhi" type="text" value="0">
+              <input type="button" value="-"onclick="jian()" class="cc">
+
+           </div>
+           <form>
+               <label>選擇尺寸</label>
+               <select name="sizelist">
+                  <option value="size1">S
+                  <option value="size2">M
+                  <option value="size3">L   
+               </select>
+               
+           </form>
+           <form>
+               <input type="submit" value="submit" id='submitname'>
+           </form>
+       </div>
+   </div>
+    
+    
+   
+    
+</div>
+             <div class="toplink"><a href="#header" style="text-decoration:none ;color: rgb(153, 89, 212);"><i class="fa fa-2x fa-arrow-up" aria-hidden="true"></i>TOP</a></div>
+         </div>
+         
+    </div>
+</body>
+<script type="text/javascript">
+    
+    function jia() {
+        var zhi = document.getElementById("zhi");
+        zhi.value=parseInt(zhi.value)+1;  
+    } 
+    function jian() {
+        var zhi = document.getElementById("zhi"); 
+         
+        
+        zhi.value=parseInt(zhi.value)-1;
+             
+    }
+    var submit=document.getElementById('submitname');
+    submit.onclick=function(){
+            alert('已提交成功！');
+    }
+    function menu(number){
+        const sidebar1=document.getElementById('scroll-'+number);
+        console.log( sidebar1);
+        if(sidebar1.style.display=='none'){
+            sidebar1.style.display='block';
+        }
+        else{
+            sidebar1.style.display='none';
+        }
+    }
+    menu();
+    function link(){
+        var data=document.getElementById('btn');
+        
+        console.log(data);
+        
+        data.onclick=function(){
+            if (data.innerText=='訂閱'){
+            const data1=document.getElementById('btn').innerText='已訂閱';
+            console.log(data1);
+            const color=document.getElementById('btn').style.backgroundColor='gray';
+            return(data1,color);
+            } 
+        }
+           
+        } 
+    link();
+</script>
+</html>
