@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="購物單.css">
 
 </head>
-<body>
+<body onload='link();'>
     <div id="header">
         <form name="form" id='form'>
             <input type="search" placeholder="search">
@@ -847,7 +847,7 @@
         }
     }
     menu();
-    
+    funcion link(){
       btnAAAA=document.getElementById('btnAAAA');
       console.log(btnAAAA);
       btnAAAA.onclick=function(){
@@ -860,7 +860,8 @@
 
             }
         }
-    
+    }
+    link();
     
 </script>
 </html>
