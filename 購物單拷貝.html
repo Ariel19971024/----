@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="購物單.css">
 
 </head>
-<body onload="link();">
+<body>
     <div id="header">
         <form name="form" id='form'>
             <input type="search" placeholder="search">
@@ -847,19 +847,19 @@
         }
     }
     menu();
-    function link(){
-        btn=document.getElementById('btnAAAA');
-        console.log(btn);
-        btn.onclick=function(){
-            const text=btn.getAttribute('value');
-            if(text=='訂閱'){
+    
+      btn=document.getElementById('btnAAAA');
+      console.log(btn);
+      btn.onclick=function(){
+          const text=btn.getAttribute('value');
+          if(text=='訂閱'){
                 btn.setAttribute('value','已訂閱');
             }else if(text=='已訂閱'){
                 btn.setAttribute('value','訂閱');
 
             }
         }
-    }
-    link();
+    
+    
 </script>
 </html>
