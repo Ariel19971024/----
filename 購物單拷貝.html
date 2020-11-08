@@ -13,10 +13,10 @@
     <div id="header">
         <form name="form" id='form'>
             <input type="search" placeholder="search">
-           
+         <input type="button" id="btn" value='訂閱' >
         </form>
          <h2 class="brand">F A N C Y</h2>
-         <button id="btn"><i class="fa fa-bell" aria-hidden="true"></i>訂閱</button>
+         
          <div class="btn_area">
             <div class="btn A"><a href='#' class='egl' style='text-decoration: none;'>NEW</a>
                                 
@@ -847,21 +847,16 @@
         }
     }
     menu();
-    function link(){
-        var data=document.getElementById('btn');
-        
-        console.log(data);
-        
-        data.onclick=function(){
-            if (data.innerText=='訂閱'){
-            const data1=document.getElementById('btn').innerText='已訂閱';
-            console.log(data1);
-            const color=document.getElementById('btn').style.backgroundColor='gray';
-            return(data1,color);
-            } 
+        btn=document.getElementById('btn');
+        console.log(btn);
+        btn.onclick=function(){
+            const text=btn.getAttribute('value');
+            if(text=='訂閱'){
+                btn.setAttribute('value','已訂閱');
+            }else if(text=='已訂閱'){
+                btn.setAttribute('value','訂閱');
+
+            }
         }
-           
-        } 
-    link();
 </script>
 </html>
